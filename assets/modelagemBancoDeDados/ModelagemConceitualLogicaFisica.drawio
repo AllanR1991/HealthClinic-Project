@@ -1,0 +1,115 @@
+<mxfile host="65bd71144e">
+    <diagram id="RDf-9bHq0v4i3J4dfWOs" name="Page-1">
+        <mxGraphModel dx="2508" dy="2842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Especialidade" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="85" y="90" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Modelagem Conceitual" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="285" y="-110" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="4" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="IdEspecialidade" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+                    <mxGeometry width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="7" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="NomeEspecialidade" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="140" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="PerfilUsuario" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="190" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="10" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="IdPerfilUsuario" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="100" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="12" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="NomePerfilUsuario" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="100" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="14" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Valores existentes:&lt;br&gt;&lt;br&gt;Administrador;&lt;br&gt;Médico;&lt;br&gt;Paciente" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="-30" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="16" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="16" target="17">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="16" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Clinica" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="-75" y="470" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="IdClinica" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+                    <mxGeometry x="-215" y="390" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Endereco" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="HorarioFuncionamento" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="-240" y="310" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="20" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="CNPJ" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="85" y="390" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="21" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="NomeFantazia" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="-215" y="470" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="22" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="RazaoSocial" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="470" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Consulta" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="260" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Usuario" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="420" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="IdUsuario" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="360" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="NomeUsuario" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="350" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="DataNascimento" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="350" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Endereco" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="420" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Telefone" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="350" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="420" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Senha" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="420" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
