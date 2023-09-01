@@ -7,12 +7,12 @@ CREATE DATABASE HealthClinicAllan
 USE HealthClinicAllan
 
 CREATE TABLE PerfilUsuario (
-	IdPerfilUsuario INT PRIMARY KEY,
+	IdPerfilUsuario INT PRIMARY KEY IDENTITY,
 	NomePerfilUsuario VARCHAR(20) UNIQUE NOT NULL
 )
 
 CREATE TABLE Usuario (
-	IdUsuario INT PRIMARY KEY,
+	IdUsuario INT PRIMARY KEY IDENTITY,
 	IdPerfilUsuario INT FOREIGN KEY REFERENCES PerfilUsuario(IdPerfilUsuario) NOT NULL,
 	NomeUsuario VARCHAR(100) NOT NULL,
 	Email VARCHAR(100) UNIQUE NOT NULL,
@@ -21,23 +21,24 @@ CREATE TABLE Usuario (
 )
 
 CREATE TABLE Endereco (
-	IdEndereco INT PRIMARY KEY,
+	IdEndereco INT PRIMARY KEY IDENTITY,
 	CEP VARCHAR(15) NOT NULL,
 	Logradouro VARCHAR(50) NOT NULL,
 	Numero VARCHAR(10) NOT NULL,
-	Complemento VARCHAR(50) NOT NULL,
+	Complemento VARCHAR(50),
 	Bairro VARCHAR(50) NOT NULL,
+	Cidade VARCHAR(50) NOT NULL,
 	UF VARCHAR(2) NOT NULL
 )
 
 CREATE TABLE EnderecoUsuario (
-	IdEnderecoTelefone INT PRIMARY KEY,
+	IdEnderecoTelefone INT PRIMARY KEY IDENTITY,
 	IdEndereco INT FOREIGN KEY REFERENCES Endereco(IdEndereco) NOT NULL,
 	IdUsuario INT FOREIGN KEY REFERENCES Usuario (IdUsuario) NOT NULL
 )
 
 CREATE TABLE Clinica (
-	IdClinica INT PRIMARY KEY,
+	IdClinica INT PRIMARY KEY IDENTITY,
 	IdEndereco INT FOREIGN KEY REFERENCES Endereco (IdEndereco) NOT NULL,
 	CNPJ VARCHAR (20) NOT NULL,
 	RazaoSocial VARCHAR (100) NOT NULL,
@@ -47,53 +48,53 @@ CREATE TABLE Clinica (
 )
 
 CREATE TABLE Telefone (
-	IdTelefone INT PRIMARY KEY,
+	IdTelefone INT PRIMARY KEY IDENTITY,
 	Numero VARCHAR(20) UNIQUE NOT NULL
 )
 
 CREATE TABLE TelefoneClinica (
-	IdTelefoneClinica INT PRIMARY KEY,
-	IdUsuario INT FOREIGN KEY REFERENCES Usuario (IdUsuario),
+	IdTelefoneClinica INT PRIMARY KEY IDENTITY,
+	IdClinica INT FOREIGN KEY REFERENCES Clinica (IdClinica),
 	IdTelefone INT FOREIGN KEY REFERENCES Telefone (IdTelefone) 
 )
 
 CREATE TABLE TelefoneUsuario (
-	IdTelefoneUsuario INT PRIMARY KEY,
+	IdTelefoneUsuario INT PRIMARY KEY IDENTITY,
 	IdUsuario INT FOREIGN KEY REFERENCES Usuario (IdUsuario) NOT NULL,
 	IdTelefone INT FOREIGN KEY REFERENCES Telefone (IdTelefone) NOT NULL
 )
 
 CREATE TABLE Medico (
-	IdMedico INT PRIMARY KEY,
+	IdMedico INT PRIMARY KEY IDENTITY,
 	IdUsuario INT FOREIGN KEY REFERENCES Usuario (IdUsuario) NOT NULL UNIQUE,
 	CRM VARCHAR (15) NOT NULL
 )
 
 CREATE TABLE ClinicaMedico (
-	IdClinicaMedico INT PRIMARY KEY,
+	IdClinicaMedico INT PRIMARY KEY IDENTITY,
 	IdMedico INT FOREIGN KEY REFERENCES Medico (IdMedico) NOT NULL,
 	IdClinica INT FOREIGN KEY REFERENCES Clinica (IdClinica) NOT NULL
 )
 
 CREATE TABLE Especificidade (
-	IdEspecificidade INT PRIMARY KEY,
+	IdEspecificidade INT PRIMARY KEY IDENTITY,
 	NomeEspecificidade VARCHAR(50) UNIQUE NOT NULL
 )
 
 CREATE TABLE EspecificidadeMedico (
-	IdEspecificidadeMedico INT PRIMARY KEY,
+	IdEspecificidadeMedico INT PRIMARY KEY IDENTITY,
 	IdEspecificidade INT FOREIGN KEY REFERENCES Especificidade (IdEspecificidade) NOT NULL,
 	IdMedico INT FOREIGN KEY REFERENCES Medico (IdMedico) NOT NULL
 )
 
 CREATE TABLE Paciente (
-	IdPaciente INT PRIMARY KEY,
+	IdPaciente INT PRIMARY KEY IDENTITY,
 	IdUsuario INT FOREIGN KEY REFERENCES Paciente (IdUsuario) NOT NULL UNIQUE,
-	Convenio VARCHAR (50) NOT NULL
+	Convenio VARCHAR (50)
 )
 
 CREATE TABLE Consulta (
-	IdConsulta INT PRIMARY KEY,
+	IdConsulta INT PRIMARY KEY IDENTITY,
 	IdMedico INT FOREIGN KEY REFERENCES Medico (IdMedico) NOT NULL,
 	IdPaciente INT FOREIGN KEY REFERENCES Paciente (IdPaciente) NOT NULL,
 	DataConsulta DATE NOT NULL,
@@ -102,7 +103,7 @@ CREATE TABLE Consulta (
 )
 
 CREATE TABLE FeedBack (
-	IdFeedBack INT PRIMARY KEY,
+	IdFeedBack INT PRIMARY KEY IDENTITY,
 	IdConsulta INT FOREIGN KEY REFERENCES Consulta (IdConsulta) UNIQUE NOT NULL,
 	IdPaciente INT FOREIGN KEY REFERENCES Paciente (IdPaciente) NOT NULL,
 	DataFeedBack DATE NOT NULL,
