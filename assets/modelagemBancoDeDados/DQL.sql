@@ -22,3 +22,26 @@ INNER JOIN EspecificidadeMedico ON EspecificidadeMedico.IdMedico = Medico.IdMedi
 INNER JOIN Especificidade ON Especificidade.IdEspecificidade = EspecificidadeMedico.IdEspecificidade
 INNER JOIN FeedBack ON FeedBack.IdConsulta = Consulta.IdConsulta
 
+
+SELECT * FROM PerfilUsuario;
+SELECT * FROM Usuario;
+SELECT * FROM Endereco;
+SELECT * FROM EnderecoUsuario;
+SELECT * FROM Clinica;
+SELECT * FROM Telefone;
+SELECT * FROM TelefoneClinica;
+SELECT * FROM TelefoneUsuario;
+SELECT * FROM Medico;
+SELECT * FROM ClinicaMedico;
+SELECT * FROM Especificidade;
+SELECT * FROM EspecificidadeMedico;
+SELECT * FROM Paciente;
+SELECT * FROM Consulta;
+SELECT * FROM FeedBack;
+
+
+
+
+
+
+
