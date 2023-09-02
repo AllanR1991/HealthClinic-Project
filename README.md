@@ -4,25 +4,31 @@ Neste projeto será desenvolvido um sistema web para uma clínica médica que at
 
 Projeto será desenvolvido em 5 sprints: 
 
--	SPRINT 1 – Banco de dados 
+-	SPRINT 1 – Banco de dados
+
+	Elaboração do Banco de dados utilizando de técnicas de modelagem para se abstrair o máximo de informação necessária referente ao projeto, através de Modelagem Conceitual, Modelagem Lógica e Modelagem Física.
 -	SPRINT 2 – Back-End (API) 
 -	SPRINT 3 – Front-End (Framework) 
 -	SPRINT 4 – Deploy 
 -	SPRINT 5 – IA 
 
-## Projeto desenvolvido junto com a escola Senai no curso de Desenvolvimento de Software 2 semestre. 
+## Projeto desenvolvido junto com a escola Senai no curso de Desenvolvimento de Software 2º Semestre. 
 
 Projeto iniciado dia 11-08-2023, onde será abordado neste projeto os seguintes temas 
 
 -	Trello (Para gerenciamento do projeto.)
 -	Figma (Desenvolvimento do protótipo do projeto.)
 -	Bando de dados
+
+
+
 	-	Modelagem Conceitual 
 	-	Modelagem Logica 
-	-	Modelagme Física 
-     	-	DDL 
-     	-	DML 
-     	-	DQL 
+	-	Modelagme Física
+	-	Scripts
+	 	-	DDL
+		-	DML 
+		-	DQL 
 
 <!-- ## Dificuldades encontradas no projeto: --> 
 
@@ -44,7 +50,7 @@ Projeto iniciado dia 11-08-2023, onde será abordado neste projeto os seguintes 
 
 -   Prototipação do Banco de dados 
 
-    -   Draw.IO(https://app.diagrams.net/) 
+    -   [Draw.IO](https://app.diagrams.net/) 
 
   
 
